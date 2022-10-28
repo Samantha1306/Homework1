@@ -7,20 +7,24 @@ try
 {
     Console.WriteLine("Введите натуральное число 1");
     int x = Convert.ToInt32 (Console.ReadLine());
-        Console.WriteLine("Введите натуральное число 2");
+    Console.WriteLine("Введите натуральное число 2");
     int y = Convert.ToInt32 (Console.ReadLine());
-    if (x==y)
-    {
-        Console.WriteLine($"Число {x} равно числу {y}");
-    }
+    Console.WriteLine("Введите натуральное число 3");
+    int z = Convert.ToInt32 (Console.ReadLine());
+    int max = x;
     if (x > y)
     {
-        Console.WriteLine($"Число {x} больше числа {y}");
+        max = x;
+        if (x > z) max = x;
+        else max = z;
     }
-    if (x<y)
+    if (x < y)
     {
-        Console.WriteLine($"Число {y} больше числа {x}");
+        max = y;
+        if (y > z) max = y;
+        else max = z;
     }
+    Console.WriteLine($"max = {max}");
 }
         catch
 {
