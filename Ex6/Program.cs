@@ -6,7 +6,7 @@
 
 Console.WriteLine ("Введите целое число");
 int x = Convert.ToInt32 (Console.ReadLine());
-double y = x % 2;
+int y = x % 2;
 if (y == 0)
 {
     Console.WriteLine("Введенное число является четным");
